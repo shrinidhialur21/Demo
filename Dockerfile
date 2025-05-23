@@ -2,7 +2,7 @@
 FROM node:18 AS builder
 
 WORKDIR /app
-COPY . .
+COPY ./soil-sensor-dashboard .
 
 RUN npm install
 RUN npm run build
